@@ -1,34 +1,19 @@
-# A Study of a Museum: Spatial Relationships and Pathway Analysis
+# Graph Machine Learning - Workspace
 
-This repository contains `Assignment_01_Giovanni-Carlo-Volpe.ipynb`, a Jupyter Notebook focused on generating and analyzing a graph representation of an architectural museum model. The aim of this study is to understand spatial relationships and how individuals might navigate the pathways inside the museum.
+This repository contains notebooks, projects, and assignments related to Graph Machine Learning applied to architectural contexts, topology, and spatial relationships.
+
+## Project Structure
+
+- **[Assignment_01_Giovanni-Carlo-Volpe](./Assignment_01_Giovanni-Carlo-Volpe/)**: Contains the Jupyter notebook and files for the first spatial relationships assignment mapping out museum adjacency using TopologicPy. See the [Assignment 01 Report](./Assignment_01_Giovanni-Carlo-Volpe/Assignment_01_Report.md) for full details.
+- **[Assignment_02_Giovanni-Carlo-Volpe](./Assignment_02_Giovanni-Carlo-Volpe/)**: Directory dedicated for the second assignment. Once completed, a report will be featured here outlining findings and graphs.
+- **[Graph ML -- NOTEBOOKS](./Graph%20ML%20--%20NOTEBOOKS/)**: Includes all lecture modules and datasets covering concepts like spatial representations, Graph Neural Networks, Node/Graph Classification, IFC Semantic/Spatial Relations, Neo4j, and GraphRAG architectures.
 
 ## Overview
 
-The purpose of this notebook is to convert an architectural 3D model into an interconnected adjacency graph using [TopologicPy](https://topologic.app/). We study how the rooms, corridors, and primary spaces connect to understand accessibility and layout efficiency. 
-
-## Workflow
-
-The `Assignment_01_Giovanni-Carlo-Volpe.ipynb` notebook follows these key steps:
-
-1. **Load Building Model:** It loads an OBJ file containing the volumetric properties of the museum's rooms.
-2. **Classify Rooms:** Rooms are categorized based on their names (e.g., Wing A, Wing B, Lobby) and assigned different colors and sizes to distinguish them.
-3. **Assemble the Museum Complex:** Volumetric cells (rooms) are merged into a single CellComplex model sharing connecting faces.
-4. **Generate Graphical Representation:** A mathematical graph is extracted where nodes represent the rooms and edges represent their shared topological adjacencies (faces).
-5. **Visualization:** The 3D architectural geometry and the resulting network graph are displayed to showcase spatial connections.
-
-## Visualizations
-
-### 1. The Museum Model
-This is the 3D visualization of the museum structure, where rooms are mapped and color-coded.
-![Visualization of the Museum](Assignment_01_Giovanni-Carlo-Volpe/Visuals/7.Visualize_Museum.png)
-
-### 2. Graph Adjacency
-Below is the network representation of the museum paths and spatial adjacency logic.
-![Graph Adjacency View](Assignment_01_Giovanni-Carlo-Volpe/Visuals/9.Display_Adjacency_Graph.png)
-
-### 3. Final Topology
-![Final Visualization](Assignment_01_Giovanni-Carlo-Volpe/Visuals/12.Final_Visualization.png)
+The core purpose of this workspace is to explore architectural models and topological features by deriving mathematical graphs. These methodologies bridge standard geometrical representations (B-rep, Meshes, IFC) into data structures suitable for Machine Learning and spatial reasoning.
 
 ## Requirements
-- Python environment with TopologicPy (0.9.18 or newer).
-- Jupyter Notebook compatible environment like VS Code or browser.
+
+- Python & Jupyter Notebook
+- TopologicPy
+- Pertinent Machine learning libraries (as detailed in the notebooks and your activated `.gmlenv` environment)
