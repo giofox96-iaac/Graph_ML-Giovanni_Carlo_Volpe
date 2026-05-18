@@ -48,3 +48,7 @@ Desktop.ini
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Notebooks
+Graph ML -- NOTEBOOKS/
+
