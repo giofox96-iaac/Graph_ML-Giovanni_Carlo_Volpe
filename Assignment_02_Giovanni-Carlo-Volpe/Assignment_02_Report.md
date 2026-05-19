@@ -55,8 +55,11 @@ In a museum as massive and dense as the Uffizi, visitors rarely have the time or
 
 Using the underlying navigation graph, the algorithm calculated the shortest, most efficient route sequence connecting these nodes. However, raw topological algorithms produce jagged, unnatural paths that snap strictly to grid centers. To resolve this, a `wire.straighten` method was employed. This method optimizes the jagged network segments into realistic, straight walking trajectories while strictly respecting the architectural boundaries (walls and inaccessible zones). 
 
-![Shortest Path Between POIs](Visuals/14.%20shortest%20path%20between%20poi.png)
-*Figure 8: Straightened shortest paths connecting targeted Points of Interest mimicking an optimized visitor itinerary.*
+<div align="center">
+  <img src="Visuals/14.%20shortest%20path%20between%20poi.png" alt="Shortest Path Between POIs" />
+  <br>
+  <em>Figure 8: Straightened shortest paths connecting targeted Points of Interest mimicking an optimized visitor itinerary.</em>
+</div>
 
 This analysis serves a dual purpose:
 1.  **For the Visitor:** It mathematically minimizes walking distance when prioritizing specific rooms, preventing fatigue ("museum legs") and unnecessary backtracking in a complex environment.
