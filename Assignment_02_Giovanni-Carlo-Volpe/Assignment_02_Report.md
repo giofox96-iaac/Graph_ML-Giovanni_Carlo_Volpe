@@ -1,15 +1,15 @@
 # Assignment 2: Graph Analysis of Architectural Structure
-## Case Study: Uffizi Gallery, Florence (Second Floor)
+## Case Study: Uffizi Gallery, Florence (First Floor)
 
 ### 1. Introduction and Choice of Subject
-This report details a graph-based analysis of the architectural structure of the Uffizi Gallery in Florence, specifically focusing on its **second floor**. The second floor was selected for this study because it is the heart of the Uffizi, housing the most historically significant and renowned artworks of the Italian Renaissance (including masterpieces by Botticelli, Leonardo da Vinci, Michelangelo, and Raphael). 
+This report details a graph-based analysis of the architectural structure of the Uffizi Gallery in Florence, specifically focusing on its **first floor**. The first floor was selected for this study because it is the heart of the Uffizi, housing the most historically significant and renowned artworks of the Italian Renaissance (including masterpieces by Botticelli, Leonardo da Vinci, Michelangelo, and Raphael). 
 
 The architectural layout of the Uffizi—a classical U-shaped administrative building converted into a sequence of enfilade rooms connected by long, dominating corridors—provides a fascinating topology for spatial analysis. By translating its geometric features into a spatial graph, I can move beyond mere architectural intuition, enabling a precise, quantitative evaluation of how spaces are connected, accessed, and experienced by visitors.
 
 <div style="text-align: center;">
   <img src="Visuals/6.%20visualize.png" alt="Geometry Visualization" />
   <br>
-  <em>Figure 1: Cleaned and processed floor plan of the Uffizi Gallery's second floor.</em>
+  <em>Figure 1: Cleaned and processed floor plan of the Uffizi Gallery's first floor.</em>
 </div>
 
 ---
