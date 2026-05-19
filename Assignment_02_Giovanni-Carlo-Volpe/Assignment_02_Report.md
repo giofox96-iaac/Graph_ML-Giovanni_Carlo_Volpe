@@ -19,8 +19,8 @@ Following the methodology discussed in the module, the analysis was broken down 
 
 #### 2.1 Global Metrics: Closeness and Betweenness Centrality
 To understand the underlying hierarchy of the gallery's spaces, foundational graph metrics were calculated:
-*   **Closeness Centrality (Integration):** Measures how "integrated" a space is relative to the rest of the building. In the Uffizi, this helps identify the "center of gravity" of the layout—the spaces that require the least amount of walking to reach from all other rooms.
-*   **Betweenness Centrality (Choice):** This metric identifies "bridges" or "bottlenecks." Because the Uffizi has long corridors with single points of entry to specific wings, high betweenness values highlight critical flow corridors where the majority of visitor traffic inevitably converges. 
+*   **Closeness Centrality:** Measures how "integrated" a space is relative to the rest of the building. In the Uffizi, this helps identify the "center of gravity" of the layout—the spaces that require the least amount of walking to reach from all other rooms.
+*   **Betweenness Centrality:** This metric identifies "bridges" or "bottlenecks." Because the Uffizi has long corridors with single points of entry to specific wings, high betweenness values highlight critical flow corridors where the majority of visitor traffic inevitably converges. 
 
 ![Betweenness Centrality](Visuals/14.%20Betweenness%20Centrality.png)
 *Figure 3: Betweenness Centrality mapping, highlighting critical flow bottlenecks.*
