@@ -26,12 +26,19 @@ Following the methodology discussed in the module, the analysis was broken down 
 #### 2.1 Global Metrics: Closeness and Betweenness Centrality
 To understand the underlying hierarchy of the gallery's spaces, foundational graph metrics were calculated:
 *   **Closeness Centrality:** Measures how "integrated" a space is relative to the rest of the building. In the Uffizi, this helps identify the "center of gravity" of the layout—the spaces that require the least amount of walking to reach from all other rooms.
+
+<div style="text-align: center;">
+  <img src="Visuals/14.%20Closeness%20Centrality.png" alt="Closeness Centrality" />
+  <br>
+  <em>Figure 3: Closeness Centrality mapping, identifying the most integrated spaces.</em>
+</div>
+
 *   **Betweenness Centrality:** This metric identifies "bridges" or "bottlenecks." Because the Uffizi has long corridors with single points of entry to specific wings, high betweenness values highlight critical flow corridors where the majority of visitor traffic inevitably converges. 
 
 <div style="text-align: center;">
   <img src="Visuals/14.%20Betweenness%20Centrality.png" alt="Betweenness Centrality" />
   <br>
-  <em>Figure 3: Betweenness Centrality mapping, highlighting critical flow bottlenecks.</em>
+  <em>Figure 4: Betweenness Centrality mapping, highlighting critical flow bottlenecks.</em>
 </div>
 
 #### 2.2 Community Detection and Local Connectivity
@@ -42,7 +49,7 @@ By identifying dense clusters of nodes, the algorithm computationally recognizes
 <div style="text-align: center;">
   <img src="Visuals/14.%20Community%20Detection.png" alt="Community Detection" />
   <br>
-  <em>Figure 4: Community Partitioning algorithm isolating functional zones (rooms vs. corridors).</em>
+  <em>Figure 5: Community Partitioning algorithm isolating functional zones (rooms vs. corridors).</em>
 </div>
 
 Following community detection, the communities are used to construct a consolidated model by generating a new boundary (or shell) that represents the distinct functional areas.
@@ -50,7 +57,7 @@ Following community detection, the communities are used to construct a consolida
 <div style="text-align: center;">
   <img src="Visuals/14.%20Degree%20centrality_New%20Shell.png" alt="New Shell" />
   <br>
-  <em>Figure 5: The new shell generated from the community detection process.</em>
+  <em>Figure 6: The new shell generated from the community detection process.</em>
 </div>
 
 From this new shell, a secondary macro-graph is extracted. This new graph represents the simplified topology of the functional zones (rooms), allowing me to analyze room-to-room connectivity rather than just grid cell connectivity.
@@ -58,13 +65,13 @@ From this new shell, a secondary macro-graph is extracted. This new graph repres
 <div style="text-align: center;">
   <img src="Visuals/14.%20Degree%20centrality_New%20Graph.png" alt="New Graph" />
   <br>
-  <em>Figure 6: The new graph extracted from the consolidated shell, representing functional zones.</em>
+  <em>Figure 7: The new graph extracted from the consolidated shell, representing functional zones.</em>
 </div>
 
 <div style="text-align: center;">
   <img src="Visuals/14.%20Degree%20centrality_2_interpolated%20valuse.png" alt="Degree Centrality" />
   <br>
-  <em>Figure 7: Degree Centrality interpolated over the floor logic highlighting highly connected hubs.</em>
+  <em>Figure 8: Degree Centrality interpolated over the floor logic highlighting highly connected hubs.</em>
 </div>
 
 ---
@@ -79,7 +86,7 @@ Using the underlying navigation graph, the algorithm calculated the shortest, mo
 <div style="text-align: center;">
   <img src="Visuals/14.%20shortest%20path%20between%20poi.png" alt="Shortest Path Between POIs" />
   <br>
-  <em>Figure 8: Straightened shortest paths connecting targeted Points of Interest mimicking an optimized visitor itinerary.</em>
+  <em>Figure 9: Straightened shortest paths connecting targeted Points of Interest mimicking an optimized visitor itinerary.</em>
 </div>
 
 This analysis serves a dual purpose:
