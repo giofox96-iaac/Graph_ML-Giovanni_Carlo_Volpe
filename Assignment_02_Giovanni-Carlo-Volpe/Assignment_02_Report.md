@@ -33,8 +33,18 @@ By identifying dense clusters of nodes, the algorithm computationally recognizes
 ![Community Detection](Visuals/14.%20Community%20Detection.png)
 *Figure 4: Community Partitioning algorithm isolating functional zones (rooms vs. corridors).*
 
+Following community detection, the communities are used to construct a consolidated model by generating a new boundary (or shell) that represents the distinct functional areas.
+
+![New Shell](Visuals/14.%20Degree%20centrality_New%20Shell.png)
+*Figure 5: The new shell generated from the community detection process.*
+
+From this new shell, a secondary macro-graph is extracted. This new graph represents the simplified topology of the functional zones (rooms), allowing us to analyze room-to-room connectivity rather than just grid cell connectivity.
+
+![New Graph](Visuals/14.%20Degree%20centrality_New%20Graph.png)
+*Figure 6: The new graph extracted from the consolidated shell, representing functional zones.*
+
 ![Degree Centrality](Visuals/14.%20Degree%20centrality_2_interpolated%20valuse.png)
-*Figure 5: Degree Centrality interpolated over the floor logic highlighting highly connected hubs.*
+*Figure 7: Degree Centrality interpolated over the floor logic highlighting highly connected hubs.*
 
 ---
 
@@ -46,7 +56,7 @@ In a museum as massive and dense as the Uffizi, visitors rarely have the time or
 Using the underlying navigation graph, the algorithm calculated the shortest, most efficient route sequence connecting these nodes. However, raw topological algorithms produce jagged, unnatural paths that snap strictly to grid centers. To resolve this, a `wire.straighten` method was employed. This method optimizes the jagged network segments into realistic, straight walking trajectories while strictly respecting the architectural boundaries (walls and inaccessible zones). 
 
 ![Shortest Path Between POIs](Visuals/14.%20shortest%20path%20between%20poi.png)
-*Figure 6: Straightened shortest paths connecting targeted Points of Interest mimicking an optimized visitor itinerary.*
+*Figure 8: Straightened shortest paths connecting targeted Points of Interest mimicking an optimized visitor itinerary.*
 
 This analysis serves a dual purpose:
 1.  **For the Visitor:** It mathematically minimizes walking distance when prioritizing specific rooms, preventing fatigue ("museum legs") and unnecessary backtracking in a complex environment.
